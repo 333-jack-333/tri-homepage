@@ -1,0 +1,44 @@
+body {background-color: blue;
+}
+
+h1 {
+    color: white;
+}
+
+/* external styles are the least specific :) */
+header {
+    color:white;
+    background-color: rgb(0, 0, 0);
+    margin: 20px;
+    padding: 20px;
+}
+
+/* default tags are the least specific */
+main {
+    color:white;
+    background:black;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* classes are more specific than default tags, but less specific than ids */
+.class { 
+    background: green;
+}
+
+/* ids are the MOST specific */
+#id {
+    background-color: blueviolet;
+}
+
+footer {
+    color:white;
+    background:black;
+     margin: 20px;
+    padding: 20px;
+}
+
+/* rules lower on the stylesheet are more specific than rules that are higher */
+footer {
+    background:rgb(117, 0, 45);
+}

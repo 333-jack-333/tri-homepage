@@ -1,0 +1,23 @@
+body {
+    background-color:rgb(0, 0, 0);
+}
+
+h3 {
+    font-family:helvetica;
+    color:white;
+    text-align:center;
+}
+
+h1 {
+    font-family:Impact;
+    font-size: 75px;
+    color:rgb(255, 255, 255);
+    text-align:left;
+  overflow-wrap: break-word;
+}
+
+p {
+    font-family:helvetica;
+    color:white;
+    text-align:center;
+}
