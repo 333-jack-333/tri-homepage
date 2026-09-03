@@ -12,7 +12,8 @@ h1 {
     font-family:Impact;
     font-size: 75px;
     color:rgb(255, 255, 255);
-    text-align:left;
+    text-align:justify;
+    text-align-last:center;
   overflow-wrap: break-word;
 }
 
@@ -20,4 +21,13 @@ p {
     font-family:helvetica;
     color:white;
     text-align:center;
+}
+
+a {
+    color:white;
+    text-decoration:none;
+}
+
+a:hover {
+    color:rgb(255, 0, 230);
 }
