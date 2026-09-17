@@ -7,20 +7,40 @@ img {
 }
 
 body {
-    background-image:url("background.png");
+  background-image: url("background.png");
+   image-rendering: pixelated;
      background-repeat: no-repeat;
   background-size: cover;
 }
 
+@font-face {
+  font-family: windows;
+  src: url(WindowsRegular.woff2);
+}
+
 h1 {
     color:white;
-    font-family: helvetica;
+    font-family: windows;
     background-color: rgb(0, 0, 0);
+    display: flex;
     border: 5px double white;
-    text-align: center;
     padding: 10px;
     margin: 20px;
 }
+
+h2 {
+    color:white;
+    font-family: windows;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    border: 5px double white;
+    padding: 10px;
+    margin: 20px;
+     justify-content: center;
+      align-items: center; 
+    margin-left: 600px;
+     margin-right: 600px;
+    }
 
 a {
     color: white;
@@ -31,16 +51,25 @@ a:hover {
     color:rgb(191, 191, 191);
 }
 
-.container {
+.gallery {
   display: flex;
+  margin: auto;
+  width: 30%;
+  image-rendering:crisp-edges;
+  border-style:ridge;
+  border-width: 15px;
+  border-color: gold;
+}
+.container {
+  display: inline;
 }
 
 .container div {
   background-color: #000000;
   opacity: 0.5;
   color:white;
-  font-family: helvetica;
-  margin: 10px;
+  font-family: windows;
+  margin: 20px;
   padding: 20px;
   font-size: 18px;
     user-select: none;
@@ -52,17 +81,17 @@ a:hover {
 
 .container2 {
   display: flex;
+    image-rendering: pixelated;
 }
 
 .container2 div {
   margin: 10px;
   padding: 5px;
-    user-select: none;
+  user-select: none;
 }
 
 .audio {
     display: flex;
     justify-content: center;
       align-items: center; 
-  
 }
