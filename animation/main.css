@@ -1,0 +1,138 @@
+* {
+  box-sizing:border-box;
+}
+
+img {
+  max-width:100%;
+}
+
+body {
+  margin:0;
+}
+
+.box {
+  background:lightblue;
+  width:100px;
+  height:100px;
+  position:relative;
+
+  /* animation-name: test;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count:1;
+  animation-timing-function:ease-in-out;
+  animation-direction:alternate;
+  animation-fill-mode:both; */
+
+  /* with the animation shorthand, the first time value is always the duration and the second is the delay */
+  animation: test 5s 2s infinite ease-in-out alternate both;
+}
+
+@keyframes test {
+  0% {
+    background:red;
+    top:0;
+  }
+  50% {
+    background: rebeccapurple;
+  }
+  100% {
+    background:green;
+    top:200px;
+  }
+}
+
+.container {
+  background:lightsteelblue;
+  height:100vh;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  position:relative
+}
+
+.circle {
+  background:lightgoldenrodyellow;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    background:lightgoldenrodyellow;
+    scale:1;
+  }
+  100% {
+    background:orangered;
+    scale:1.4;
+  }
+}
+
+.square {
+  background:lightgoldenrodyellow;
+  width:100px;
+  height:100px;
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.mover {
+  background:lightgoldenrodyellow;
+  width:100px;
+  height:40px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  animation: move 4s infinite linear, 
+  grow 2s infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    left:-100px;
+  }
+  100% {
+    left:100%;
+  }
+}
+
+@keyframes grow {
+  0% {
+    scale:1;
+  }
+  100% {
+    scale:4;
+  }
+}
+
+.changer {
+   background:lightgoldenrodyellow;
+   width:100px;
+   height:100px;
+   transition: 
+   all 5s,
+   background 1s ease-in-out, 
+   border-radius 1s ease-in-out,
+   rotate 1s ease-in-out;
+}
+
+.changer:hover {
+  background:orangered;
+  border-radius:100%;
+  rotate: 45deg;
+}
+
+.changer:active {
+  background:lime;
+  scale:.9;
+}
